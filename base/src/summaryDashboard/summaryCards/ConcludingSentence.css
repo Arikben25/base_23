@@ -1,0 +1,29 @@
+/* ConcludingSentence.css */
+
+/* העיגול הסגול מהפיגמה */
+.circleBg {
+  /* Ellipse 342 */
+
+position: absolute;
+width: 275px;
+height: 280px;
+left: 22px;
+top: -35px;
+background: linear-gradient(85.65deg, #EBEFFF 3.89%, #FFFFFF 59.07%);
+border-radius: 50%;
+}
+
+/* הטקסט עצמו */
+.sentenceContent {
+  position: relative;
+  z-index: 1; /* מעל העיגול */
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: right;
+  color: #6B6363;
+  margin-top: 30px; /* ריווח מהכותרת */
+  width: 233px;    /* רוחב לפי הפיגמה */
+  align-self: flex-end; /* הצמדה לימין */
+}
+
