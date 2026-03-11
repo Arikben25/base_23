@@ -1,33 +1,24 @@
-
 .card {
-  position: relative; /* חייב להיות כאן כדי שהעיגול יתמקם יחסית לכרטיס */
-  overflow: hidden;
-  /* מידות מדויקות מהפיגמה */
-  width: 100%; /* תופס את כל רוחב העמודה */
-  max-width: 400px; /* מגביל את הרוחב המקסימלי של הכרטיס */
+  width: 100%;
+  max-width: 400px;
   height: 228px;
   position: relative;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  direction: rtl; /* עבודה נכונה בעברית */
-
-  /* עיצוב רקע וגבולות */
-  background: #FFFFFF;
-  box-shadow: 0px 0px 5.76px #E4E7F3;
+  direction: rtl;
+  background: #ffffff;
+  box-shadow: 0px 0px 5.76px #e4e7f3;
   border-radius: 8.65px;
-  
-  /* ריווח פנימי */
-  padding: 12px 16px;
-  box-sizing: border-box; /* מבטיח שה-padding לא יגדיל את ה-width */
+  box-sizing: border-box;
 }
 
 .headerCard {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  padding: 12px 16px;
   margin-bottom: 16px;
   z-index: 10;
 }
@@ -36,27 +27,25 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 8px; /* ריווח בין האייקון לטקסט */
+  gap: 8px;
 }
 
-/* עיצוב הכותרת לפי הפיגמה */
 .titleCard {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 24px;
-  color: #34405B;
+  color: #34405b;
   margin: 0;
   text-align: right;
 }
 
-/* עיצוב אזור ה-extraAction מצד שמאל */
 .extraAction {
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: #4A5565;
+  color: #4a5565;
   transition: opacity 0.2s ease;
 }
 
@@ -64,7 +53,6 @@
   opacity: 0.7;
 }
 
-/* טיפול בתוכן הפנימי (children) */
 .card > *:last-child {
   flex-grow: 1;
   display: flex;

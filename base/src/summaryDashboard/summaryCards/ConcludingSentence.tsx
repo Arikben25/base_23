@@ -1,7 +1,8 @@
-import "./ConcludingSentence.css"
+import "./ConcludingSentence.css";
 import Card from "../ui/Card";
-import icon from "../../assets/Frame 1000002389.svg"
-import linkIcon from "../../assets/akar-icons_link-out.svg"
+import icon from "../../assets/Frame 1000002389.svg";
+import linkIcon from "../../assets/akar-icons_link-out.svg";
+
 export default function ConcludingSentence() {
   const sentence = (
     <p className="sentenceContent">
@@ -9,15 +10,14 @@ export default function ConcludingSentence() {
       לטובת ייעול תהליך הארגון והתכנון
     </p>
   );
-  const iconImg = (<img src={icon}></img>)
-  const iconLink = (<img src={linkIcon}></img>)
+  
+  const iconImg = <img src={icon} alt="Icon" />;
+  const iconLink = <img src={linkIcon} alt="Link" />;
 
   return (
-    <div>
-      <Card icon={iconImg} title="משפט קיום" extraAction={iconLink}>
-        <div className="circleBg" />
-        {sentence}
-      </Card>
-    </div>
+    <Card icon={iconImg} title="משפט קיום" extraAction={iconLink}>
+      <div className="circleBg" />
+      {sentence}
+    </Card>
   );
 }
