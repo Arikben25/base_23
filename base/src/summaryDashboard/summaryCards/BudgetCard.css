@@ -1,0 +1,95 @@
+.budgetContainer {
+  position: absolute;
+  width: 267px;
+  height: 135px;
+  left: calc(50% - 267px / 2 + 0.5px);
+  top: 57px;
+}
+
+.budgetRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 3px;
+  position: relative;
+}
+
+.budgetRow:nth-child(3) {
+  margin: 12px 0;
+  height: 7px;
+  background: rgba(255, 247, 223, 0.8);
+  border: 1px dashed #ffc400;
+  border-radius: 4px;
+  align-self: stretch;
+} 
+
+.budgetRow:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e1e5f3;
+}
+
+.labelSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-direction: row; 
+}
+
+.labelText {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #535661;
+  text-align: right;
+}
+
+.iconFrame {
+  width: 17.5px;
+  height: 17.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #34405b;
+}
+
+.valueSection {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.valueNumber {
+  font-family: "Segoe UI", sans-serif;
+  position: absolute;
+  width: 109px;
+  height: 18px;
+  right: 190px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.5px;
+  line-height: 18px;
+  color: #4d4848;
+}
+
+.shekelSymbol {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4d4848;
+}
+
+.BottomGraph {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  height: 2.5px;
+  border-radius: 5px;
+  background-color:  #ffc400;
+}

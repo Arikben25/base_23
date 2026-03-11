@@ -1,0 +1,127 @@
+.tasksList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 184px;
+  overflow-y: auto;
+  left: 0px;
+  padding: 0 2px 0 0;
+  padding-left: 5px;
+}
+
+.tasksList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.tasksList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tasksList::-webkit-scrollbar-thumb {
+  background: #d4daf6;
+  border-radius: 6px;
+}
+
+.tasksList::-webkit-scrollbar-thumb:hover {
+  background: #bcc5ec;
+}
+
+.taskRow {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  align-items: center;
+  padding: 8px 9px;
+  margin-right: 9px;
+  margin-left: 2px;
+  background: #ffffff;
+  box-shadow: 0px 0px 5.76px #e4e7f3;
+  border-radius: 8.65px;
+}
+
+.taskName {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+  color: #4d4848;
+  text-align: right;
+}
+
+.taskOwner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", sans-serif;
+  gap: 6px;
+  font-size: 14px;
+  color: #4d4848;
+  flex-wrap: wrap;
+}
+
+.ownerAvatar {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.taskDeadline {
+  display: flex;
+  width: auto;
+  height: 19px;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  gap: 7px;
+  margin-right: 23px;
+  text-align: center;
+  color: #ff6262;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.warningIconWrapper {
+  width: 24px;
+  height: 24px;
+  background: #ffeaea;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 0px 5.76px #e4e7f3;
+  border-radius: 8.65px;
+  padding: 8px 12px;
+  margin: 0 12px 0px 12px;
+  font-family: "Segoe UI", sans-serif;
+  font-style: normal;
+  line-height: 19px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #535661;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.tableHeader span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tableHeader span:nth-child(1) { justify-content: flex-start; }
+.tableHeader span:nth-child(2) { justify-content: center; }
+.tableHeader span:nth-child(3) { justify-content: center; }
+
+.tableHeader img {
+  width: 10px;
+  height: auto;
+}

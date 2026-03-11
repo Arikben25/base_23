@@ -1,25 +1,18 @@
-/* SummaryDashboard.css */
-
 .summaryContainer {
   display: flex;
   flex-direction: column;
-  gap: 24px; /* ריווח בין החלק העליון לגאנט */
+  gap: 24px;
   padding: 20px;
-  background-color: #f8fafc; /* רקע אפרפר בהיר שמוציא את הכרטיסים הלבנים */
+  background-color: #f8fafc;
   min-height: 100vh;
   direction: rtl;
 }
 
 .upper-cards-grid {
-  /* display: grid;
+  display: grid;
   grid-template-columns: repeat(4, 1fr); 
   gap: 20px; 
-  align-items: stretch; */
-  display: grid;
-  /* מחלק את כל הרוחב הזמין ל-4 עמודות שוות בדיוק */
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 20px; /* הריווח בין הכרטיסים */
-  width: 100%; /* תופס את כל רוחב המסך */
+  width: 100%; 
   box-sizing: border-box;
 }
 
@@ -34,16 +27,14 @@
   justify-content: center;
 }
 
-/* רספונסיביות - התאמה למסכים קטנים יותר (טאבלטים) */
 @media (max-width: 1200px) {
   .upper-cards-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 כרטיסים בשורה */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* התאמה לטלפונים */
 @media (max-width: 600px) {
   .upper-cards-grid {
-    grid-template-columns: 1fr; /* כרטיס אחד בשורה */
+    grid-template-columns: 1fr;
   }
 }
